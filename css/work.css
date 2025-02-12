@@ -1,0 +1,80 @@
+/* Underline on active page */
+.navbar-list .work {
+  text-decoration: underline;
+  text-decoration-color: #866352;
+  text-underline-offset: 8px;
+}
+
+.work-experience-container {
+  max-width: 80%;
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+}
+
+.work-experience-container h1 {
+  margin-bottom: 3rem;
+}
+
+.bullet {
+  margin-bottom: 3rem;
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headline h3 {
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bullet h4 {
+  margin-top: 1rem;
+}
+.bullet p {
+  margin-top: 2rem;
+  width: clamp(50%, 20vh, 100%);
+}
+
+/* Skill section */
+.skill-section {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+.skill-wrapper {
+  margin-top: 5rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+/* Ract Icon animation */
+#react-icon {
+  animation-duration: 5s;
+  animation-name: rotate;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#react-icon:hover {
+  animation-play-state: paused;
+}
+
+/* education section */
+
+.education-section h2 {
+  margin-bottom: 5rem;
+}
+
+@keyframes rotate {
+  0% {
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

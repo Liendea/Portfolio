@@ -1,0 +1,294 @@
+/****** LIGHT - % DARK MODE SETTING ******/
+/*************************************/
+:root {
+  color-scheme: light dark;
+}
+
+/********** HEADER **********/
+/* Header background image */
+header {
+  background-image: url(/images/forest.jpg);
+  width: 100%;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header text*/
+.header-text {
+  width: 90%;
+  height: auto;
+  align-self: center;
+  text-align: center;
+  color: #f2ede8;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header-text p {
+  width: clamp(50%, 50vh, 90%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Logotype */
+.navbar-desktop .navbar-logo.index img {
+  filter: invert(1);
+  display: block;
+}
+
+/*  Navigation links */
+li a.index {
+  color: #f2ede8;
+  text-decoration: none;
+}
+
+/* Underline  on current page */
+.navbar-list .home {
+  text-decoration: underline;
+  text-decoration-color: #866352;
+  text-underline-offset: 8px;
+}
+
+/********** MAIN CONTENT **********/
+.introduction-section {
+  margin-top: 10rem;
+}
+/* --- presentation content --- */
+.presentation-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  justify-content: space-between;
+  column-gap: 0px;
+  row-gap: 10px;
+  margin-top: 5rem;
+}
+
+/* --- presentations text --- */
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  grid-column: 1/6;
+  grid-row: 1/3;
+  align-self: flex-start;
+}
+.presentation a {
+  color: black;
+  text-decoration: none;
+}
+.presentation a:hover {
+  text-decoration: underline;
+  text-decoration-color: #866352;
+  text-underline-offset: 8px;
+}
+
+/* --- bulletpoints --- */
+.bulletpoint-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  grid-column: 7/13;
+  grid-row: 1/4;
+}
+.bullet1,
+.bullet2,
+.bullet3,
+.bullet4 {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-top: 1px solid gray;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+}
+
+/* --- About & Work buttons --- */
+.button-wrapper {
+  display: flex;
+  align-self: center;
+  grid-column: 1/5;
+  grid-row: 3;
+}
+.button-work,
+.button-about {
+  min-width: 118px;
+  height: 44px;
+  border-radius: 30px;
+  padding-left: 1.5rem;
+  border: none;
+  color: #f2ede8;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: start;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.button-work {
+  background-color: #f2ede852;
+  border: 1px solid #866352;
+  color: #866352;
+}
+
+.button-about {
+  background-color: #866352;
+}
+
+.button-about img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.button-work img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #866352;
+}
+
+/********** PROJECT SECTION **********/
+/*************************************/
+
+.project-section h1 {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* project cards */
+.project-item {
+  background-color: light-dark(white, #281c16);
+  border-radius: 12px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Project bild */
+.project-img-wrapper {
+  width: 300px;
+  height: 15rem;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.project-1 {
+  background-image: url(../images/Project_login_1.png);
+}
+.project-2 {
+  background-image: url(../images/Project_login_2.png);
+}
+.project-3 {
+  background-image: url(../images/Project_login_3.png);
+}
+.project-4 {
+  background-image: url(../images/Project_login_2.png);
+}
+
+.text-wrapper {
+  height: auto;
+  text-align: left;
+  margin: 1rem;
+  margin-bottom: 0.5;
+  height: 20%;
+}
+.text-wrapper h3 {
+  margin-bottom: 10px;
+}
+
+.button-container {
+  position: relative;
+  margin: 1rem;
+  align-self: flex-start;
+}
+
+.button-container img {
+  position: absolute;
+  top: 11px;
+  left: 115px;
+}
+
+/* ~~~~~~~~~ PRESENTATION CONTENT RESPONSIVE SEETINGS ~~~~~~~~~/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /
+/* --- info container med content omstruktureras vid mindre skrämar --- */
+@media (max-width: 749px) {
+  /*--- grid container --- */
+  .presentation-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    margin-top: 3rem;
+  }
+
+  /* --- presentations text --- */
+  .presentation {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  /* --- bullet points ---*/
+  .bulletpoint-container {
+    grid-column: 1/3;
+    grid-row: 3/6;
+  }
+
+  .button-wrapper {
+    grid-column: 1/5;
+    grid-row: 6/7;
+  }
+}
+
+@media (max-width: 900px) {
+  /* ~~~~~~~~~ HEADER LOGOTYPE RESPONSIVE SEETINGS ~~~~~~~~~*/
+  /* Change color on logotype to black on smaller screens  */
+  .navbar-desktop .navbar-logo.index img {
+    filter: invert(0);
+  }
+}
+/* ~~~~~~~~~ PROJECT SECTION RESPONSIVE SEETINGS ~~~~~~~~~*/
+/* --- center items on smaller screens --- */
+@media (max-width: 1068px) {
+  .project-container {
+    justify-content: center;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~ MAIN/HEAD RESPONSIVE SETTINGS ~~~~~~~~~~~~~~~ */
+/* ------- Remove extra margin on main on this page -------- */
+@media (min-width: 1500px) {
+  #index {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}

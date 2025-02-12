@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linda Bengtsson | CONTACT </title>
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+
+    <header>
+      <!------- Desktop Navigation menu ------->
+      <nav class="navbar-desktop" aria-label="Main Navigation">
+        <div class="navbar-logo">
+          <a href="index.html">
+            <img
+              src="./images/Full_Logo_black.svg"
+              width="232"
+              alt="Company Logo"
+            />
+          </a>
+        </div>
+
+        <ul class="navbar-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+        </ul>
+
+        
+          <div id="contact_activated" class="contact-btn-container dark">
+            Contact
+            <img id="arrow" src="./images/Arrow_white.svg" alt="" />
+          </div>
+    
+    
+
+        <!--- Hamburger meny -->
+        <button
+          type="button"
+          class="hamburger"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </nav>
+
+      <!------- Mobile Navigation menu ------->
+      <div id="mobile-menu" class="navbar-mobile hidden">
+        <div class="navbar-logo">
+          <a href="index.html">
+            <img
+              src="./images/Full_Logo_light.svg"
+              width="232"
+              alt="Company Logo"
+            />
+          </a>
+        </div>
+
+        <ul>
+          <li><a class="h2-bright" href="index.html">Home</a></li>
+          <li><a class="h2-bright" href="About.html">About</a></li>
+          <li><a class="h2-bright" href="work.html">Work</a></li>
+        </ul>
+
+        <div class="contact-btn-container light">
+          <a href="contact.html" class="contact-button-light">
+            Contact <img src="./images/Arrow_brown.svg" alt="" />
+          </a>
+        </div>
+        <div class="mobile-contact">
+          <p class="p-bright">+46 70 065 82 52</p>
+          <p class="p-bright">bengtsson-linda@outlook.com</p>
+        </div>
+      </div>
+    </header>
+
+
+<main>
+  <!------- Contact section ------->
+  <section class="contact-section">
+
+    <div class="grid-container">
+
+      <!------- Contact text ------->
+      <div class="contact-text">
+        <h1>Hello!</h1>
+        <h3>Job and collaboration inquiries are best sent via email or Instagram.</h3>
+        <p>You can also fill out the contact form with your request, and I will get back to you as soon as possible!</p>
+      
+        
+
+
+      </div>
+
+      <!------- Concact & Address & Social icnons ------->
+      <div class="address-info">
+        <h3 class="h3">Linda Bengtsson®</h3>
+        <p>+46 700 65 82 52</p>
+        <p>bengtsson-linda@outlook.com</p>
+        <br>
+        <h3>Location</h3>
+        <p>Country: Sweden</p>
+        <p>City: Stockholm / Åre</p>
+
+      <!------- Ikonlänkar till LinkediN, Instagram och Github ------->
+      <div class="social-icon">
+        <a href="https://www.linkedin.com/in/bengtsson-linda/"
+          target="_blank">
+          <img src="./images/linkedin-brands-solid.svg" width="30" alt="linkedin logo link">
+        </a>
+        <a href="https://github.com/Liendea" 
+          target="_blank">
+          <img src="./images/github-brands-solid.svg" width="30" alt="github logo link">
+        </a>
+        <a href="https://www.instagram.com/liendea.dev/" 
+          target="_blank">
+          <img src="./images/instagram-brands-solid.svg" width="30" alt="instagram logo link">
+        </a>
+      </div>
+    </div>
+
+
+      <!---------- Contact form ------------>
+    <div class="contact-form-wrapper">
+      <form action="https://formsubmit.co/bengtsson-linda@outlook.com" method="POST"> <!--Läggg till korrekt action--->
+        <div>
+          <label for="name"></label><br>
+            <input type="text" id="name" name="name" placeholder="Name:" required />
+          </label>
+        </div>
+
+        <div>
+          <label for="email"></label><br>
+            <input type="email" id="email" name="email" placeholder="E-mail:" required />
+          </label>
+        </div>
+
+        <div>       
+          <label for="phonenumber"></label><br>
+            <input type="text" id="phonenumber" name="phonnenumber" placeholder="Phone number:" />
+          </label>
+        </div>
+
+        <div>       
+          <label for="subject"></label><br>
+            <input type="text" id="subject" name="subject" placeholder="Subject:" required />
+          </label>
+        </div>
+
+        <div class="message">
+          <label for="message"></label><br>
+          <textarea id="message" name="message" placeholder="Type your message..."></textarea>
+        </label>
+        </div>
+
+        <div class="submit-button">
+          <button type="submit" class="submit-button-dark">Send request <img src="./images/Arrow_white.svg" alt="" /></button>
+        </div>
+      </form>
+    </div>
+
+  
+
+
+</div>
+
+  </section>
+</main>
+
+
+<!---------- Footer ------------>
+<footer>
+  <div class="footer-wrapper">
+    <!------ Logo ------->
+    <div class="logo-wrapper">
+      <img src="./images/Small_Logo_big.svg" alt="logo" />
+    </div>
+    <!--- contact --->
+    <div class="contact-wrapper">
+      <h3 class="h3-bright">Contact</h3>
+      <p class="p-bright">Linda Bengtsson®</p>
+      <p class="p-bright">+46 700 65 82 52</p>
+      <a href="mailto:bengtsson-linda@outlook.com" class="p-bright"
+      >Send e-mail</a
+    >
+    </div>
+    <!------ Social media ------->
+    <div class="social-wrapper">
+      <h3 class="h3-bright">Social</h3>
+      <p class="p-bright">
+        <a
+          href="https://www.linkedin.com/in/bengtsson-linda/"
+          target="_blank"
+          >Linkedin</a
+        >
+      </p>
+      <p class="p-bright">
+        <a href="https://github.com/Liendea" target="_blank"> Github </a>
+      </p>
+      <p class="p-bright">
+        <a href="https://www.instagram.com/liendea.dev/" target="_blank"
+          >Instagram
+        </a>
+      </p>
+    </div>
+
+    <!------ Legal ------->
+    <div class="legal-wrapper">
+      <h3 class="h3-bright">Legal</h3>
+      <p class="p-bright"><a href="#">Privacy policy</a></p>
+      <p class="p-bright"><a href="#">Cookie setting</a></p>
+    </div>
+  </div>
+  <!------ Copyright ------->
+  <div class="copyright">
+    <p class="p-bright">Copyright © Linda Bengtsson 2025</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

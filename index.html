@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linda Bengtsson | Home</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!------- Desktop Navigation menu ------->
+      <nav class="navbar-desktop" aria-label="Main Navigation">
+        <div class="navbar-logo index">
+          <a href="index.html">
+            <img
+              src="./images/Full_Logo_black.svg"
+              width="232"
+              alt="Company Logo"
+            />
+          </a>
+        </div>
+
+        <ul class="navbar-list">
+          <li class="home"><a class="index" href="index.html">Home</a></li>
+          <li class="about"><a class="index" href="About.html">About</a></li>
+          <li class="work"><a class="index" href="work.html">Work</a></li>
+        </ul>
+
+        <a href="contact.html" class="contact-button-dark">
+          <div id="contact_activated" class="contact-btn-container dark">
+            Contact
+            <img src="./images/Arrow_white.svg" alt="" />
+          </div>
+        </a>
+
+        <!--- Hamburger meny -->
+        <button
+          type="button"
+          class="hamburger"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </nav>
+
+      <!------- Mobile Navigation menu ------->
+      <div id="mobile-menu" class="navbar-mobile hidden">
+        <div class="navbar-logo">
+          <a href="index.html">
+            <img
+              src="./images/Full_Logo_light.svg"
+              width="232"
+              alt="Company Logo"
+            />
+          </a>
+        </div>
+
+        <ul>
+          <li><a class="h2-bright" href="index.html">Home</a></li>
+          <li><a class="h2-bright" href="About.html">About</a></li>
+          <li><a class="h2-bright" href="work.html">Work</a></li>
+        </ul>
+
+        <div class="contact-btn-container light">
+          <a href="contact.html" class="contact-button-light">
+            Contact <img src="./images/Arrow_brown.svg" alt="" />
+          </a>
+        </div>
+        <div class="mobile-contact">
+          <p class="p-bright">+46 70 065 82 52</p>
+          <p class="p-bright">bengtsson-linda@outlook.com</p>
+        </div>
+      </div>
+
+      <div class="header-text">
+        <h1 class="h1-bright">
+          Elegant Code,<br />
+          Seamless Design
+        </h1>
+        <p class="p-bright">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+          voluptates, iste culpa quam id ea nesciunt facilis facere excepturi
+          inventore magnam ipsum quod in reiciendis totam est cupiditate nostrum
+          praesentium.
+        </p>
+      </div>
+    </header>
+
+    <main id="index">
+      <!------- Introduction section------->
+      <section class="introduction-section">
+        <div class="presentation-container">
+          <!--- presentation & bulletpoints --->
+          <div class="presentation">
+            <h1>Welcome</h1>
+            <p>
+              Frontend developer with a passion for snowboarding, nature,
+              animals, and building smart and stylish web solutions. Based in
+              Åre, Sweden. Currently studying frontend development at
+              Yrkeshögskolan in Borås.
+            </p>
+          </div>
+
+          <!--- bulletpoints --->
+          <div class="bulletpoint-container">
+            <div class="bullet1">
+              <h3>Frontend developer <br /></h3>
+              <h4>Present role</h4>
+            </div>
+
+            <div class="bullet2">
+              <h3>Product admin</h3>
+              <h4>2018 - 2025</h4>
+            </div>
+
+            <div class="bullet3">
+              <h3>Sales</h3>
+              <h4>2017 - 2018</h4>
+            </div>
+
+            <div class="bullet4">
+              <h3>SPA Therapist</h3>
+              <h4>2016 - 2017</h4>
+            </div>
+          </div>
+
+          <div class="button-wrapper">
+            <button type="button" class="button-about">
+              About <img src="./images/Arrow_white.svg" alt="" />
+            </button>
+            <button type="button" class="button-work">
+              Work <img src="./images/Arrow_white.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!------- Project section ------->
+      <section class="project-section">
+        <h1>Projects</h1>
+
+        <div class="project-container">
+          <!--- Project item 1--->
+          <div class="project-item">
+            <!-- project bild -->
+            <div class="project-img-wrapper">
+              <div class="project-1"><!-- background image here --></div>
+            </div>
+            <!-- project text -->
+            <div class="text-wrapper">
+              <h3>Login Screen</h3>
+              <p>Built with HTML & CSS</p>
+            </div>
+            <!-- project knapp -->
+            <div class="button-container">
+              <button type="button" class="project-button">
+                See Project <img src="./images/Arrow_white.svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <!--- Project item 2--->
+          <div class="project-item">
+            <!-- project bild -->
+            <div class="project-img-wrapper">
+              <div class="project-2">
+                <!--- background image here --->
+              </div>
+            </div>
+            <!-- project text -->
+            <div class="text-wrapper">
+              <h3>Login Screen</h3>
+              <p>Built with HTML, CSS & JavaScript</p>
+            </div>
+            <!-- project knapp -->
+            <div class="button-container">
+              <button type="button" class="project-button">
+                See Project <img src="./images/Arrow_white.svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <!--- Project item 3--->
+          <div class="project-item">
+            <!-- project bild -->
+            <div class="project-img-wrapper">
+              <div class="project-3"><!-- background image here --></div>
+            </div>
+            <!-- project text -->
+            <div class="text-wrapper">
+              <h3>Login Screen</h3>
+              <p>Built with HTML, CSS & JavaScript</p>
+            </div>
+            <!-- project knapp -->
+            <div class="button-container">
+              <button type="button" class="project-button">
+                See Project <img src="./images/Arrow_white.svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <!--- Project item 4--->
+          <div class="project-item">
+            <!-- project bild -->
+            <div class="project-img-wrapper">
+              <div class="project-4"><!-- background image here --></div>
+            </div>
+            <!-- project text -->
+            <div class="text-wrapper">
+              <h3>Login Screen</h3>
+              <p>Built with HTML, CSS & JavaScript</p>
+            </div>
+            <!-- project knapp -->
+            <div class="button-container">
+              <button type="button" class="project-button">
+                See Project <img src="./images/Arrow_white.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!---------- Footer ------------>
+    <footer>
+      <div class="footer-wrapper">
+        <!--- Logo --->
+        <div class="logo-wrapper">
+          <img
+            src="./images/Small_Logo_big.svg"
+            width="100"
+            height="100"
+            alt="logo"
+          />
+        </div>
+        <!--- contact --->
+        <div class="contact-wrapper">
+          <h3 class="h3-bright">Contact</h3>
+          <p class="p-bright">Linda Bengtsson®</p>
+          <p class="p-bright">+46 700 65 82 52</p>
+          <a href="mailto:bengtsson-linda@outlook.com" class="p-bright"
+            >Send e-mail</a
+          >
+        </div>
+
+        <!--- Social media --->
+        <div class="social-wrapper">
+          <h3 class="h3-bright">Social</h3>
+          <p class="p-bright">
+            <a
+              href="https://www.linkedin.com/in/bengtsson-linda/"
+              target="_blank"
+            >
+              Linkedin
+            </a>
+          </p>
+          <p class="p-bright">
+            <a href="https://github.com/Liendea" target="_blank"> Github </a>
+          </p>
+          <p class="p-bright">
+            <a href="https://www.instagram.com/liendea.dev/" target="_blank">
+              Instagram
+            </a>
+          </p>
+        </div>
+
+        <!--- Legal --->
+        <div class="legal-wrapper">
+          <h3 class="h3-bright">Legal</h3>
+          <p class="p-bright"><a href="#">Privacy policy</a></p>
+          <p class="p-bright"><a href="#">Cookie setting</a></p>
+        </div>
+      </div>
+
+      <!--- Copyright --->
+      <div class="copyright">
+        <p class="p-bright">Copyright © Linda Bengtsson 2025</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

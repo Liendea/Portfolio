@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/****** LIGHT - % DARK MODE SETTING ******/
+:root {
+  color-scheme: light dark;
+}
+body {
+  background-color: light-dark(#f2ede8, #463126);
+  font-family: "poppins", serif;
+  height: 100vh;
+  height: 100dvh;
+}
+
+main {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+/****** DESKTOP NAVIGATIONS MENY ******/
+.navbar-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: 100%;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+/* Logotype */
+.navbar-desktop .navbar-logo img {
+  filter: invert(0);
+  display: block;
+}
+/* Logotype change color  on dark mode */
+@media (prefers-color-scheme: dark) {
+  .navbar-desktop .navbar-logo img {
+    filter: invert(1);
+  }
+}
+
+/*  Navigation links */
+.navbar-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+li {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+li a {
+  color: light-dark(black, #f2ede8);
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #866352;
+  text-underline-offset: 8px;
+}
+
+/****** MOBILE NAVIGATIONS MENY ******/
+/* Hamburger menu icon */
+.hamburger {
+  position: relative;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  border: none;
+  z-index: 10;
+  transition: all 0.25s;
+  display: none;
+  background-color: transparent;
+}
+
+/* hamburger menu icon lines */
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 4px;
+  background: light-dark(black, white);
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(15px);
+}
+
+/* hamburger button lines transormation when clicked */
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+  background-color: #f2ede8;
+}
+.open .hamburger-middle {
+  display: none;
+  background-color: #f2ede8;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  background-color: #f2ede8;
+}
+
+/* mobile navbar */
+.navbar-mobile {
+  position: fixed;
+  top: 0px;
+  background-color: light-dark(#866352, #281c16);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  transition: all 0.3s;
+  z-index: 9;
+}
+
+.navbar-mobile.hidden {
+  transform: translateX(100%);
+}
+
+.navbar-mobile .navbar-logo {
+  padding-top: 1rem;
+  margin-left: 1rem;
+  align-self: flex-start;
+}
+
+.navbar-mobile ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.navbar-mobile li {
+  margin: 2rem;
+}
+
+.navbar-mobile li a {
+  color: #f2ede8;
+  text-decoration: none;
+}
+
+.navbar-mobile li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #f2ede8;
+  text-underline-offset: 15px;
+}
+
+.mobile-contact {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+/********** BUTTONS **********/
+/* Contact button ( <a> styled as a button ) */
+/* contact button container */
+.contact-btn-container {
+  position: relative;
+  width: 10.375rem;
+  height: 3.1875rem;
+  border-radius: 30px;
+  padding-left: 1.5rem;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+/* dark contact button */
+.contact-btn-container.dark {
+  background-color: #866352;
+}
+
+.contact-button-dark {
+  color: #f2ede8;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.contact-btn-container.dark img {
+  position: absolute;
+  top: 14px;
+  left: 120px;
+  transition: 0.2s ease;
+}
+
+.contact-btn-container.dark:hover,
+.contact-button-dark:hover {
+  background-color: #583b2d;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+/* light contact button */
+.contact-btn-container.light {
+  background-color: #f2ede8;
+  margin-top: 5rem;
+}
+
+.contact-button-light {
+  color: #583b2d;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-button-light img {
+  position: absolute;
+  top: 14px;
+  left: 130px;
+}
+
+.contact-btn-container.light:hover,
+.contact-button-light:hover {
+  cursor: pointer;
+}
+
+/* Project button */
+.project-button {
+  background-color: #866352;
+  width: 9.8125rem;
+  height: 2.75rem;
+  border-radius: 1.85rem;
+  padding-left: 1.5rem;
+  border: none;
+  color: #f2ede8;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: start;
+}
+
+.button-container img {
+  position: absolute;
+  top: 11px;
+  left: 115px;
+}
+
+.project-button:hover {
+  background-color: #583b2d;
+  cursor: pointer;
+}
+
+/********** FOOTER SECTION **********/
+footer {
+  margin-top: auto;
+  height: auto;
+  background-color: light-dark(#866352, #281c16);
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+  padding-top: 8rem;
+  margin-top: 10rem;
+}
+
+.footer-wrapper a {
+  color: #f2ede8;
+  text-decoration: none;
+}
+
+.footer-wrapper h3,
+.footer-wrapper p {
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  padding-left: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.copyright p {
+  opacity: 50%;
+  font-size: 15px;
+}
+
+/************ DESKTOP TEXT STYLES ************/
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 100%;
+  margin-bottom: 1rem;
+  letter-spacing: -4%;
+}
+
+.h1-bright {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 100%;
+  margin-bottom: 1rem;
+  letter-spacing: -4%;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -4%;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -4%;
+}
+
+.h3-bright {
+  font-size: 1.6875rem;
+  font-weight: 600;
+  line-height: 100%;
+  color: #f2ede8;
+  opacity: 100%;
+  letter-spacing: -4%;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 100%;
+  opacity: 50%;
+  letter-spacing: -4%;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 300;
+  opacity: 50%;
+  line-height: 23px;
+}
+
+.p-bright {
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 23px;
+  color: #f2ede8;
+  opacity: 100%;
+}
+
+/* ~~~~~~~~~~~~~~~ TEXT RESPONSIVE SETTINGS ~~~~~~~~~~~~~~~ */
+@media (max-width: 1080px) {
+  h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .h1-bright {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 1rem;
+    color: #f2ede8;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  .h2-bright {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 100%;
+    color: #f2ede8;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  .h3-bright {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 100%;
+    color: #f2ede8;
+    opacity: 100%;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 100%;
+    opacity: 50%;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 300;
+    opacity: 50%;
+    line-height: 23.4px;
+  }
+
+  .p-bright {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 23.4px;
+    color: #f2ede8;
+    opacity: 100%;
+  }
+
+  .p-small {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 20.8px;
+    color: #f2ede8;
+    opacity: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  /*  --- Minska textstorlek på bulletpoints på mindre skärmar --- */
+  h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 100%;
+    opacity: 50%;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~ MAIN/HEAD RESPONSIVE SETTINGS ~~~~~~~~~~~~~~~ */
+/* ---- Add margin on sides of Main & Head on larger screens ---- */
+@media (min-width: 1500px) {
+  main,
+  head {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 2rem;
+  }
+}
+/* ---- Reduce padding on the sides on smaller screens ---- */
+@media (max-width: 900px) {
+  main {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+/*~~~~~~~~~~~~~~~ NAVIGATION RESPONSIVE SETTINGS ~~~~~~~~~~~~~~~ */
+/* ---- Navigation switch from desktoop to mobile at 900px ---- */
+@media only screen and (max-width: 900px) {
+  .navbar-desktop {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .navbar-list,
+  .contact-btn-container.dark {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-mobile {
+    display: flex;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~ FOOTER RESPONSIVE SETTINGS ~~~~~~~~~~~~~~~ */
+/* ---- Footer omstruktureras och minskar i storlek vid mindre skärmar --- */
+
+@media (max-width: 600px) {
+  /*  --- Footer  --- */
+
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 50px);
+    column-gap: 10px;
+    row-gap: 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 3rem;
+  }
+
+  .logo-wrapper {
+    grid-row: 1/4;
+    width: 100%;
+    border-bottom: 1px solid #f2ede8;
+    padding-top: 2rem;
+  }
+
+  .contact-wrapper {
+    grid-row: 4/7;
+    border-bottom: 1px solid #f2ede8;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .legal-wrapper {
+    grid-row: 7/9;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid #f2ede8;
+  }
+
+  .social-wrapper {
+    grid-row: 9/11;
+    padding: 0;
+    border-bottom: 1px solid #f2ede8;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 3rem;
+    justify-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: space-between;
+
+    padding-top: 2rem;
+  }
+
+  .logo-wrapper {
+    grid-column: 1/3;
+    grid-row: 1;
+    align-self: flex-end;
+    justify-self: flex-start;
+  }
+  .logo-wrapper img {
+    width: 100%;
+  }
+
+  .contact-wrapper {
+    grid-column: 5/9;
+    grid-row: 2;
+    width: 100%;
+  }
+  .social-wrapper {
+    grid-column: 1/4;
+    grid-row: 2;
+    width: 100%;
+  }
+
+  .legal-wrapper {
+    grid-column: 10/13;
+    grid-row: 2;
+    width: 100%;
+  }
+}
