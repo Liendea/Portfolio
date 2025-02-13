@@ -30,12 +30,12 @@
           <li class="about"><a class="index" href="About.html">About</a></li>
           <li class="work"><a class="index" href="work.html">Work</a></li>
         </ul>
-
-        <a href="contact.html" class="contact-button-dark">
-          <div id="contact_activated" class="contact-btn-container dark">
+        <!------- Contact button dark ------->
+        <a href="contact.html" class="contact-btn-link dark">
+          <button type="button" id="contact_activated" class="contact-btn dark">
             Contact
             <img src="./images/Arrow_white.svg" alt="" />
-          </div>
+          </button>
         </a>
 
         <!--- Hamburger meny -->
@@ -68,12 +68,13 @@
           <li><a class="h2-bright" href="About.html">About</a></li>
           <li><a class="h2-bright" href="work.html">Work</a></li>
         </ul>
-
-        <div class="contact-btn-container light">
-          <a href="contact.html" class="contact-button-light">
+        <!------- Contact button light ------->
+        <a href="contact.html" class="contact-btn-link light">
+          <button type="button" class="contact-btn light">
             Contact <img src="./images/Arrow_brown.svg" alt="" />
-          </a>
-        </div>
+          </button>
+        </a>
+
         <div class="mobile-contact">
           <p class="p-bright">+46 70 065 82 52</p>
           <p class="p-bright">bengtsson-linda@outlook.com</p>
@@ -132,13 +133,26 @@
             </div>
           </div>
 
+          <!--- Buttons to About & Work site -->
           <div class="button-wrapper">
-            <button type="button" class="button-about">
-              About <img src="./images/Arrow_white.svg" alt="" />
-            </button>
-            <button type="button" class="button-work">
-              Work <img src="./images/Arrow_white.svg" alt="" />
-            </button>
+            <a href="about.html">
+              <button type="button" class="button-about">
+                About <img src="./images/Arrow_white.svg" alt="" />
+              </button>
+            </a>
+            <a href="work.html">
+              <button type="button" class="button-work">
+                Work
+                <!--- Use dark arrow on light mode and light arrow on dark mode -->
+                <picture
+                  ><source
+                    srcset="./images/Arrow_white.svg"
+                    media="(prefers-color-scheme: dark)"
+                  />
+                  <img src="./images/Arrow_brown.svg" />
+                </picture>
+              </button>
+            </a>
           </div>
         </div>
       </section>
@@ -161,9 +175,14 @@
             </div>
             <!-- project knapp -->
             <div class="button-container">
-              <button type="button" class="project-button">
-                See Project <img src="./images/Arrow_white.svg" alt="" />
-              </button>
+              <a
+                href="https://liendea.github.io/Login-page-1.0/index.html"
+                target="_blank"
+              >
+                <button type="button" class="project-button">
+                  See Project <img src="./images/Arrow_white.svg" alt="" />
+                </button>
+              </a>
             </div>
           </div>
 
@@ -182,9 +201,14 @@
             </div>
             <!-- project knapp -->
             <div class="button-container">
-              <button type="button" class="project-button">
-                See Project <img src="./images/Arrow_white.svg" alt="" />
-              </button>
+              <a
+                href="https://liendea.github.io/Login-page-2.0/"
+                target="_blank"
+              >
+                <button type="button" class="project-button">
+                  See Project <img src="./images/Arrow_white.svg" alt="" />
+                </button>
+              </a>
             </div>
           </div>
 
@@ -201,9 +225,14 @@
             </div>
             <!-- project knapp -->
             <div class="button-container">
-              <button type="button" class="project-button">
-                See Project <img src="./images/Arrow_white.svg" alt="" />
-              </button>
+              <a
+                href="https://liendea.github.io/Login-page-3.0/#"
+                target="_blank"
+              >
+                <button type="button" class="project-button">
+                  See Project <img src="./images/Arrow_white.svg" alt="" />
+                </button>
+              </a>
             </div>
           </div>
 
@@ -220,9 +249,14 @@
             </div>
             <!-- project knapp -->
             <div class="button-container">
-              <button type="button" class="project-button">
-                See Project <img src="./images/Arrow_white.svg" alt="" />
-              </button>
+              <a
+                href="https://liendea.github.io/Login-page-3.0/#"
+                target="_blank"
+              >
+                <button type="button" class="project-button">
+                  See Project <img src="./images/Arrow_white.svg" alt="" />
+                </button>
+              </a>
             </div>
           </div>
         </div>

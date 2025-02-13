@@ -7,7 +7,7 @@
 /********** HEADER **********/
 /* Header background image */
 header {
-  background-image: url(/images/forest.jpg);
+  background-image: url(../images/forest.jpg);
   width: 100%;
   height: 900px;
   background-repeat: no-repeat;
@@ -134,29 +134,49 @@ li a.index {
   text-align: start;
   margin-right: 1rem;
   position: relative;
+  cursor: pointer;
 }
 
 .button-work {
-  background-color: #f2ede852;
-  border: 1px solid #866352;
-  color: #866352;
+  background-color: light-dark(#f2ede8, #3c2d26);
+  border: 1px solid light-dark(#866352, #f2ede8);
+  color: light-dark(#866352, #f2ede8);
 }
 
 .button-about {
   background-color: #866352;
 }
 
+.button-about:hover {
+  background-color: #281c16;
+}
+
+.button-work:hover {
+  background-color: light-dark(#866352, #f2ede8);
+  border: 1px solid light-dark(#866352, #f2ede8);
+  color: light-dark(#f2ede8, #866352);
+}
+/* change color on button arrow when hover - dark mode*/
+.button-work:hover img {
+  content: url("/images/Arrow_brown.svg");
+}
+/* change color on button arrow when hover - light mode*/
+@media (prefers-color-scheme: light) {
+  .button-work:hover img {
+    content: url("/images/Arrow_white.svg");
+  }
+}
+
 .button-about img {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 11px;
+  right: 15px;
 }
 
 .button-work img {
   position: absolute;
   top: 10px;
-  right: 10px;
-  background-color: #866352;
+  right: 15px;
 }
 
 /********** PROJECT SECTION **********/

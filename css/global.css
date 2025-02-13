@@ -9,7 +9,7 @@
   color-scheme: light dark;
 }
 body {
-  background-color: light-dark(#f2ede8, #463126);
+  background-color: light-dark(#f2ede8, #3c2d26);
   font-family: "poppins", serif;
   height: 100vh;
   height: 100dvh;
@@ -24,7 +24,7 @@ main {
 .navbar-desktop {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   flex-direction: row;
   font-size: 1.25rem;
   font-weight: 600;
@@ -39,6 +39,7 @@ main {
 .navbar-desktop .navbar-logo img {
   filter: invert(0);
   display: block;
+  margin-top: auto;
 }
 /* Logotype change color  on dark mode */
 @media (prefers-color-scheme: dark) {
@@ -175,67 +176,56 @@ li a:hover {
 }
 
 /********** BUTTONS **********/
-/* Contact button ( <a> styled as a button ) */
-/* contact button container */
-.contact-btn-container {
-  position: relative;
-  width: 10.375rem;
-  height: 3.1875rem;
-  border-radius: 30px;
-  padding-left: 1.5rem;
-  border: none;
-  display: flex;
-  align-items: center;
-}
 
-/* dark contact button */
-.contact-btn-container.dark {
-  background-color: #866352;
-}
-
-.contact-button-dark {
-  color: #f2ede8;
+/* contact button */
+.contact-btn {
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 600;
+  font-family: inherit;
+  width: 10.375rem;
+  height: 3.1875rem;
+  border-radius: 30px;
+  text-align: start;
+  padding-left: 1.5rem;
+  border: none;
+  cursor: pointer;
 }
 
-.contact-btn-container.dark img {
+/* dark contact button */
+.contact-btn.dark {
+  background-color: #866352;
+  color: #f2ede8;
+  position: relative;
+}
+
+.contact-btn.dark:hover {
+  background-color: #583b2d;
+}
+
+.contact-btn.dark img {
   position: absolute;
-  top: 14px;
-  left: 120px;
+  top: 15px;
+  right: 20px;
   transition: 0.2s ease;
 }
 
-.contact-btn-container.dark:hover,
-.contact-button-dark:hover {
-  background-color: #583b2d;
-  cursor: pointer;
-  border-radius: 30px;
-}
-
 /* light contact button */
-.contact-btn-container.light {
+.contact-btn.light {
   background-color: #f2ede8;
   margin-top: 5rem;
-}
-
-.contact-button-light {
   color: #583b2d;
   font-size: 1.5rem;
   font-weight: 600;
   text-decoration: none;
+  cursor: pointer;
+  position: relative;
 }
 
-.contact-button-light img {
+.contact-btn.light img {
   position: absolute;
   top: 14px;
   left: 130px;
-}
-
-.contact-btn-container.light:hover,
-.contact-button-light:hover {
-  cursor: pointer;
 }
 
 /* Project button */
@@ -324,7 +314,7 @@ h2 {
   letter-spacing: -4%;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.6875rem;
   font-weight: 500;
   line-height: 100%;
   letter-spacing: -4%;
@@ -352,6 +342,11 @@ p {
   font-weight: 300;
   opacity: 50%;
   line-height: 23px;
+}
+
+.opacity {
+  opacity: 50%;
+  font-weight: 400;
 }
 
 .p-bright {
@@ -473,7 +468,7 @@ p {
     padding-left: 1rem;
   }
   .navbar-list,
-  .contact-btn-container.dark {
+  .contact-btn.dark {
     display: none;
   }
 

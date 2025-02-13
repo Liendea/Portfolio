@@ -25,7 +25,6 @@
 }
 
 .headline h3 {
-  margin-right: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -34,7 +33,7 @@
 }
 .bullet p {
   margin-top: 2rem;
-  width: clamp(50%, 20vh, 100%);
+  width: clamp(50%, 50vh, 100%);
 }
 
 /* Skill section */

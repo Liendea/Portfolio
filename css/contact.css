@@ -4,7 +4,6 @@
   align-items: center;
   flex-direction: column;
   margin-top: 6rem;
-  background-color: light-dark(#f2ede8, #463126);
   width: 100%;
 }
 
@@ -98,22 +97,22 @@ input:focus {
   border-color: light-dark(black, #866352);
 }
 
-.submit-button {
-  position: relative;
-}
+/* Submit button */
 
 .submit-button-dark {
   background-color: #866352;
-  width: 11rem;
-  height: 2.75rem;
+  width: 10.375rem;
+  height: 3.1875rem;
   border-radius: 1.85rem;
-  padding-left: 1.5rem;
+  padding-left: 1.4rem;
   border: none;
   color: #f2ede8;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 500;
   text-align: start;
+  position: relative;
+  margin-top: 2rem;
 }
 
 .submit-button-dark:hover {
@@ -123,8 +122,8 @@ input:focus {
 
 .submit-button img {
   position: absolute;
-  top: 27px;
-  margin-left: 5px;
+  top: 15px;
+  right: 11px;
 }
 
 /* ----- Socialmedia icons ----- */
@@ -141,13 +140,6 @@ input:focus {
   filter: invert(1);
 }
 
-/* change color on social media icons when dark mode is prefered*/
-@media (prefer-color-scheme) {
-  .social-icon img {
-    filter: invert(0);
-  }
-}
-
 .social-icon a {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -159,6 +151,13 @@ input:focus {
 .social-icon a:hover {
   transform: scale(1.2);
   transition: transform 0.3s ease-in-out;
+}
+
+/* change color on social media icons when light mode is prefered*/
+@media (prefers-color-scheme: light) {
+  .social-icon img {
+    filter: invert(0);
+  }
 }
 
 /* ----- Contact menu button animation----- */
