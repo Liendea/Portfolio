@@ -36,6 +36,10 @@
   width: clamp(50%, 50vh, 100%);
 }
 
+hr {
+  opacity: 50%;
+}
+
 /* Skill section */
 .skill-section {
   margin-top: 15rem;
