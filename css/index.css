@@ -158,12 +158,12 @@ li a.index {
 }
 /* change color on button arrow when hover - dark mode*/
 .button-work:hover img {
-  content: url("/images/Arrow_brown.svg");
+  content: url("./images/Arrow_brown.svg");
 }
 /* change color on button arrow when hover - light mode*/
 @media (prefers-color-scheme: light) {
   .button-work:hover img {
-    content: url("/images/Arrow_white.svg");
+    content: url("./images/Arrow_white.svg");
   }
 }
 
