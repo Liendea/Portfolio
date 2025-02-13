@@ -33,7 +33,7 @@
 }
 
 .placeholder-img {
-  background-image: url(./images/snow.jpg);
+  background-image: url("/images/snow.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
