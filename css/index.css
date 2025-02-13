@@ -127,7 +127,6 @@ li a.index {
   border-radius: 30px;
   padding-left: 1.5rem;
   border: none;
-  color: #f2ede8;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 500;
@@ -137,18 +136,19 @@ li a.index {
   cursor: pointer;
 }
 
-.button-work {
-  background-color: light-dark(#f2ede8, #3c2d26);
-  border: 1px solid light-dark(#866352, #f2ede8);
-  color: light-dark(#866352, #f2ede8);
-}
-
 .button-about {
   background-color: #866352;
+  color: #f2ede8;
 }
 
 .button-about:hover {
   background-color: #281c16;
+}
+
+.button-work {
+  background-color: light-dark(#f2ede8, #3c2d26);
+  border: 1px solid light-dark(#866352, #f2ede8);
+  color: light-dark(#866352, #f2ede8);
 }
 
 .button-work:hover {
@@ -160,14 +160,14 @@ li a.index {
 /* change color on button arrow when hover - dark mode */
 @media (prefers-color-scheme: dark) {
   .button-work:hover img {
-    content: url("../images/Arrow_white.svg");
+    content: url("/images/Arrow_brown.svg");
   }
 }
 
 /* change color on button arrow when hover - light mode */
 @media (prefers-color-scheme: light) {
   .button-work:hover img {
-    content: url("../images/Arrow_brown.svg");
+    content: url("/images/Arrow_white.svg");
   }
 }
 
