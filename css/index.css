@@ -7,7 +7,7 @@
 /********** HEADER **********/
 /* Header background image */
 header {
-  background-image: url(../images/forest.jpg);
+  background-image: url("../images/forest.jpg");
   width: 100%;
   height: 900px;
   background-repeat: no-repeat;
@@ -156,14 +156,18 @@ li a.index {
   border: 1px solid light-dark(#866352, #f2ede8);
   color: light-dark(#f2ede8, #866352);
 }
-/* change color on button arrow when hover - dark mode*/
-.button-work:hover img {
-  content: url("./images/Arrow_brown.svg");
+
+/* change color on button arrow when hover - dark mode */
+@media (prefers-color-scheme: dark) {
+  .button-work:hover img {
+    content: url("../images/Arrow_white.svg");
+  }
 }
-/* change color on button arrow when hover - light mode*/
+
+/* change color on button arrow when hover - light mode */
 @media (prefers-color-scheme: light) {
   .button-work:hover img {
-    content: url("./images/Arrow_white.svg");
+    content: url("../images/Arrow_brown.svg");
   }
 }
 
