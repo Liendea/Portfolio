@@ -108,15 +108,18 @@ li a:hover {
 }
 
 /* hamburger button lines transormation when clicked */
-.open .hamburger-top {
+.open .hamburger-top,
+.open #index-hamburger-top {
   transform: rotate(45deg) translateY(6px) translateX(6px);
   background-color: #f2ede8;
 }
-.open .hamburger-middle {
+.open .hamburger-middle,
+.open #index-hamburger-middle {
   display: none;
   background-color: #f2ede8;
 }
-.open .hamburger-bottom {
+.open .hamburger-bottom,
+.open #index-hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
   background-color: #f2ede8;
 }
