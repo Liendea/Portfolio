@@ -54,6 +54,30 @@ li a.index {
   text-underline-offset: 8px;
 }
 
+/* hamburger menu icon lines */
+/* Css copied from globas css file to prevent that darkmode changes the hamburger lines 
+to white on the index page, as on other the pages */
+.hamburger-top.index,
+.hamburger-middle.index,
+.hamburger-bottom.index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 4px;
+  background: black;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle.index {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom.index {
+  transform: translateY(15px);
+}
+
 /********** MAIN CONTENT **********/
 .introduction-section {
   margin-top: 10rem;
