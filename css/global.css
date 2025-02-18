@@ -8,6 +8,8 @@
 :root {
   color-scheme: light dark;
 }
+
+/****** BODY & MAIN ******/
 body {
   background-color: light-dark(#f2ede8, #3c2d26);
   font-family: "poppins", serif;
@@ -174,15 +176,13 @@ li a:hover {
 }
 
 .mobile-contact {
-  margin-top: 10rem;
+  margin-top: auto;
   text-align: center;
 }
 
 /********** BUTTONS **********/
-
 /* contact button */
 .contact-btn {
-  text-decoration: none;
   font-size: 1.25rem;
   font-weight: 600;
   font-family: inherit;
@@ -216,12 +216,8 @@ li a:hover {
 /* light contact button */
 .contact-btn.light {
   background-color: #f2ede8;
-  margin-top: 5rem;
   color: #583b2d;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
+  margin-top: 5rem;
   position: relative;
 }
 
