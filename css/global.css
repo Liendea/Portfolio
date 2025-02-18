@@ -133,6 +133,7 @@ li a:hover {
   background-color: light-dark(#866352, #281c16);
   width: 100%;
   height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,7 +177,7 @@ li a:hover {
 }
 
 .mobile-contact {
-  margin-top: auto;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -217,7 +218,7 @@ li a:hover {
 .contact-btn.light {
   background-color: #f2ede8;
   color: #583b2d;
-  margin-top: 5rem;
+  margin-top: 1rem;
   position: relative;
 }
 
