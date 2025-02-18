@@ -176,11 +176,6 @@ li a:hover {
   text-underline-offset: 15px;
 }
 
-.mobile-contact {
-  margin-top: 2rem;
-  text-align: center;
-}
-
 /********** BUTTONS **********/
 /* contact button */
 .contact-btn {
@@ -218,7 +213,7 @@ li a:hover {
 .contact-btn.light {
   background-color: #f2ede8;
   color: #583b2d;
-  margin-top: 1rem;
+  margin-top: 8rem;
   position: relative;
 }
 
