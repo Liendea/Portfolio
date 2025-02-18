@@ -19,3 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
     contact_btn.style.backgroundColor = "#583b2d";
   }, 100);
 });
+
+// Automatically close mobie nav meny when window is resized
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 900) {
+    mobile_nav.classList.add("hidden");
+    hamburger_btn.classList.remove("open");
+  }
+});
