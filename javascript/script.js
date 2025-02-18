@@ -1,10 +1,20 @@
 /* ----- Toggla mobil menyn via klick på hamburger knapp----- */
 const hamburger_btn = document.querySelector(".hamburger");
 const mobile_nav = document.querySelector(".navbar-mobile");
+const body = document.querySelector("body");
 
 hamburger_btn.addEventListener("click", () => {
   hamburger_btn.classList.toggle("open");
   mobile_nav.classList.toggle("hidden");
+
+  // Add no scroll to body when mobile navmeny is open
+  if (!mobile_nav.classList.contains("hidden")) {
+    body.style.position = "fixed";
+    body.style.overflow = "hidden";
+  } else {
+    body.style.removeProperty("position");
+    body.style.removeProperty("overflow");
+  }
 });
 
 /* ----- Contact menu button animation----- */
@@ -25,5 +35,14 @@ window.addEventListener("resize", () => {
   if (window.innerWidth > 900) {
     mobile_nav.classList.add("hidden");
     hamburger_btn.classList.remove("open");
+
+    // Add no scroll to body when mobile navmeny is open
+    if (!mobile_nav.classList.contains("hidden")) {
+      body.style.position = "fixed";
+      body.style.overflow = "hidden";
+    } else {
+      body.style.removeProperty("position");
+      body.style.removeProperty("overflow");
+    }
   }
 });
