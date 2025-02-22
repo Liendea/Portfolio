@@ -5,14 +5,15 @@
   text-underline-offset: 8px;
 }
 
-.work-experience-container {
-  max-width: 80%;
-  margin-top: 8rem;
-  margin-bottom: 10rem;
+/* --- work section --- */
+.work h1 {
+  margin-bottom: 8rem;
 }
 
-.work-experience-container h1 {
-  margin-bottom: 3rem;
+.work-experience-container {
+  max-width: 100%;
+  margin-top: 8rem;
+  margin-bottom: 10rem;
 }
 
 .bullet {

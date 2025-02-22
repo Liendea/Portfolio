@@ -1,0 +1,55 @@
+{
+  "workExperience": [
+    {
+      "work_title": "Frontend Developer",
+      "workplace": "Somewhere great!",
+      "dates": "Future role",
+      "description": "I am a dedicated and detail-oriented frontend developer with a strong foundation in HTML, CSS, JavaScript, and soon also in React. I have a keen eye for design, a passion for creating user-friendly interfaces, and a commitment to writing clean, efficient code. With my problem-solving skills and ability to adapt to new technologies, I ensure seamless and responsive web experiences. Additionally, my experience in customer-focused roles has honed my communication and teamwork skills, making me a valuable asset to any development team."
+    },
+    {
+      "work_title": "Product administrationr",
+      "workplace": "SLSO",
+      "dates": "2018-2025",
+      "description": "In this role, I had primary responsibility for article management, ensuring that over 15,000 products were accurately recorded in all our ordering systems with correct information and that the order flow functioned seamlessly. This required close collaboration with suppliers and distributors, as well as a high level of attention to detail. I greatly enjoyed this role as it was a central position with significant responsibility. "
+    },
+    {
+      "work_title": "Sales",
+      "workplace": "ICA Kvantum Åkersberga",
+      "dates": "2017-2018",
+      "description": "In this role, I served as Co-Manager of the Fruit and Vegetables department while also handling cashier responsibilities and overseeing the self-checkout registers."
+    },
+    {
+      "work_title": "SPA Therapist",
+      "workplace": "Axelssons SPA, Marholmens SPA, Lyxess SPA",
+      "dates": "2016-2017",
+      "description": "IIn this role, I worked as a professional spa therapist at various locations. I specialized in classic Swedish massage, spa massage, hot stone massage, facial treatments, as well as pelo-, thalasso-, and aromatherapy treatments. Additionally, I was responsible for sales and reception duties, including managing bookings and consultations."
+    }
+  ],
+
+  "education": [
+    {
+      "program": "Frontend developer JavaScript & React",
+      "school": "Yrkeshögskolan Borås",
+      "year": "2025-2026",
+      "description": "A two-year vocational training program in frontend development. During this program I will learn HTML, CSS, JavaScript, React, Node.js, TypeScript, UX/UI design and how to design, build, and launch smart and responsive web applications. "
+    },
+    {
+      "program": "Programing Level 1",
+      "school": "NTI Skolan",
+      "year": "2022",
+      "description": "A foundational programming course where I learned the basics of C#."
+    },
+    {
+      "program": "Natural Science Level 2",
+      "school": "Hermods",
+      "year": "2020",
+      "description": "An advanced course with a focus on natural sciences, environment, and sustainability. "
+    },
+    {
+      "program": " Therapist",
+      "school": "Axelsons gymnastical institut",
+      "year": "2016",
+      "description": "A 10-week vocational training program to become a certified SPA therapist. This program provided comprehensive training in classic Swedish massage, spa massage, hot stone massage, lymphatic massage, facial treatments, thalassotherapy, pelotherapy, and human anatomy. Additionally, it covered essential skills in sales and customer service. "
+    }
+  ]
+}
