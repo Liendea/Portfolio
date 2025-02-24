@@ -56,7 +56,7 @@ window.addEventListener("resize", () => {
 });
 
 //Fetch work- and educationdata fron JSON file and create HTML elements with the retrived data
-fetch("work.json") // Hämta JSON filen
+fetch("data.json") // Hämta JSON filen
   .then(function (response) {
     return response.json(); // Konvertera JSON filen
   })
