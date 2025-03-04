@@ -8,5 +8,6 @@ Features:
   - Built with HTML, CSS, and JavaScript.
   - Dynamic loading of work experience and education from a JSON file.
   - Simple and responsive design.
+  - Dark and light theme
 
 The project aims to provide a basic understanding of building a simple website and managing data with JSON and JavaScript.
