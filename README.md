@@ -15,11 +15,17 @@ The project aims to provide a basic understanding of building a simple website a
   * Simple and responsive design.
   * Dark and light theme
 
+Link to website:
+https://liendea.github.io/Portfolio/
 
+### Project instructions 
+The instructions for the project were to create a simple and responsive website following a preset design layout that I could tweak a little bit as I liked.
 
-(https://liendea.github.io/Portfolio/)
+This was the initial design:
 
+![initial_design](https://github.com/user-attachments/assets/98a488d9-e4e5-4aa9-828d-75888246a440)
 
+I am happy with the end result of my project but will eventually create a portfoliio with a different design.
 
 ## Contact
 
