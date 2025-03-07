@@ -7,11 +7,12 @@
 The project aims to provide a basic understanding of building a simple website and managing data with JSON and JavaScript.)*
 
 #### The portfolio website is built using HTML, CSS, and JavaScript. Information about work experience and education is fetched from a custom-created JSON file, making it easy to update and manage the content.
-
+#### The project cards are fetched from gitHub API instead of hardcoded. All repos created on my gitHub will appear on the portfolio page automatically except from repos I dont want to show (repos without any added homepage are filtered out).
 ### Features:
 
   * Built with HTML, CSS, and JavaScript.
   * Dynamic loading of work experience and education from a JSON file.
+  * Dynamic loading of projec cards with link to repos and project homapge from GitHub API.
   * Simple and responsive design.
   * Dark and light theme
 
