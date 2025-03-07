@@ -76,7 +76,7 @@ fetch("data.json") // fetch JSON filen
 
     // Fetch container from HTML
     const work_container = document.querySelector(".work-experience-container");
-    // IF element don't exist on the page, the script wont run.
+    // IF element don't exist on the page, the script won't run.
     // (to avoid error message on the other html pages where the element dont exist)
     if (!work_container) {
       return;
@@ -145,7 +145,7 @@ fetch("https://api.github.com/users/liendea/repos")
   .then((data) => {
     let project_container = document.querySelector(".project-container");
 
-    // IF element don't exist on the page, the script wont run.
+    // IF element don't exist on the page, the script won't run.
     // (to avoid error message on the other html pages where the element dont exist)
     if (!project_container) {
       return;
