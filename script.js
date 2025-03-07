@@ -1,5 +1,7 @@
 "use strict"; // strictmode on
 
+// ------ Denna kod har jag skrivit själv  ----- //
+
 /* ----- Mobile menu toggle when click on the hamburger button ----- */
 const hamburger_btn = document.querySelector(".hamburger");
 const mobile_nav = document.querySelector(".navbar-mobile");
@@ -18,6 +20,8 @@ hamburger_btn.addEventListener("click", () => {
     body.style.removeProperty("overflow");
   }
 });
+
+// ------ Denna kod har jag skrivit själv ----- //
 
 /* ----- Contact menu button animation----- */
 const contact_btn = document.querySelector("#contact_activated");
@@ -38,6 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 100);
 });
 
+// ------ Denna kod har jag skrivit själv ----- //
+
 // Automatically close mobie nav meny when window is resized
 window.addEventListener("resize", () => {
   if (window.innerWidth > 900) {
@@ -54,6 +60,9 @@ window.addEventListener("resize", () => {
     }
   }
 });
+
+// ------ Denna kod har jag skrivit själv med hjälp av lektionsmaterial
+// och inspiration från youtube videos där jag sökt på "fetch data from API" ----- //
 
 //Fetch work- and educationdata from JSON file and create HTML elements with the retrived data
 fetch("data.json") // fetch JSON filen
@@ -123,5 +132,59 @@ fetch("data.json") // fetch JSON filen
 
       // Append educationDiv to container
       education_container.appendChild(educationDiv);
+    });
+  });
+
+// ------ Denna kod har jag skrivit själv med hjälp av lektionsmaterial
+// och inspiration frå youtube videos där jag sökt på "fetch data from API" ----- //
+
+// PROJECT CARDS
+// fetch data from gitHub API to create project cards with links to github repo and the project homepage
+fetch("https://api.github.com/users/liendea/repos")
+  .then((response) => response.json()) // convert to JS
+  .then((data) => {
+    let project_container = document.querySelector(".project-container");
+
+    data.forEach((repo, index) => {
+      if (
+        repo.homepage !== "" &&
+        repo.homepage !== null &&
+        repo.homepage !== undefined
+      ) {
+        let project_item = document.createElement("div");
+        project_item.classList.add("project-item");
+        project_item.innerHTML = `
+              <div class="project-img-wrapper">
+                <div id="project-${index}">
+                <!-- Img from Css --->
+                </div>
+              </div>
+             
+  
+              <div class="text-wrapper">
+                <h3>${repo.name}</h3>
+                <p>${repo.description}</p>
+              </div> 
+         
+              <div class="button-container">
+
+                <button type="button" class="button-preview" onclick="window.open('${repo.homepage}')">
+                Try it
+                <img src="./images/Arrow_white.svg" alt="" />
+                </button>
+
+                <button type="button" class="button-repo" onclick="window.open('${repo.html_url}')">
+                Repo
+                <!-- Use dark arrow on light mode and light arrow on dark mode -->
+                <picture>
+                  <source srcset="./images/Arrow_white.svg" media="(prefers-color-scheme: dark)"/>
+                  <img src="./images/Arrow_brown.svg" alt="" />
+                </picture>
+              </button>
+            </div>
+        `;
+
+        project_container.appendChild(project_item);
+      }
     });
   });

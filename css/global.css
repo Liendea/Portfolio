@@ -223,7 +223,7 @@ li a:hover {
   left: 130px;
 }
 
-/* Project button */
+/* Project button 
 .project-button {
   background-color: #866352;
   width: 9.8125rem;
@@ -247,7 +247,7 @@ li a:hover {
 .project-button:hover {
   background-color: #583b2d;
   cursor: pointer;
-}
+} */
 
 /********** FOOTER SECTION **********/
 footer {
