@@ -234,11 +234,16 @@ to white on the index page  */
   background-image: url(../images/default_img.png);
 }
 
-#project-0, /* Converter */
-#project-2, /* Login page 1 */
-#project-3, /* Login page 2 */
-#project-4, /* Login page 3 */
-#project-5  /* Portfolio */ {
+#project-0, /*  */
+#project-1, /* Botanique */ 
+#project-2, /* Converter */
+#project-3, /* */
+#project-4, 
+#project-5,  /* Login page 1 */
+#project-6, /* Login page 2 */
+#project-7,  /* Login page 3 */
+#project-8,  /* Portfolio */
+#project-9 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -249,20 +254,30 @@ to white on the index page  */
 }
 
 /* Set img to project cards here */
-#project-0 {
-  background-image: url(../images/Project_converter.png);
+#project-1 {
+  background-image: url(../images/Botanique\ header.png);
 }
 #project-2 {
-  background-image: url(../images/Project_login_1.png);
-}
-#project-3 {
-  background-image: url(../images/Project_login_2.png);
+  background-image: url(../images/Project_converter.png);
 }
 #project-4 {
-  background-image: url(../images/Project_login_3.png);
+  background-image: url(../images/Project_login_1.png);
 }
 #project-5 {
+  background-image: url(../images/Project_login_1.png);
+}
+#project-6 {
+  background-image: url(../images/Project_login_2.png);
+}
+#project-7 {
+  background-image: url(../images/Project_login_3.png);
+}
+#project-8 {
   background-image: url(../images/project_portfolio.png);
+}
+
+#project-9 {
+  background-image: url(../images/Botanique\ header.png);
 }
 
 /* Project card text content */

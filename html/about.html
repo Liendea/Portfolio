@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Linda Bengtsson | Work</title>
-    <link rel="stylesheet" href="./css/work.css" />
-    <link rel="stylesheet" href="./css/global.css" />
+    <title>Linda Bengtsson | About</title>
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/global.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -21,9 +21,9 @@
       <!------- Desktop Navigation menu ------->
       <nav class="navbar-desktop" aria-label="Main Navigation">
         <div class="navbar-logo">
-          <a href="index.html">
+          <a href="/index.html">
             <img
-              src="./images/Full_Logo_black.svg"
+              src="/images/Full_Logo_black.svg"
               width="232"
               alt="Company Logo"
             />
@@ -31,7 +31,7 @@
         </div>
 
         <ul class="navbar-list">
-          <li class="home"><a href="index.html">Home</a></li>
+          <li class="home"><a href="/index.html">Home</a></li>
           <li class="about"><a href="about.html">About</a></li>
           <li class="work"><a href="work.html">Work</a></li>
         </ul>
@@ -44,7 +44,7 @@
           onclick="window.location.href='contact.html'"
         >
           Contact
-          <img src="./images/Arrow_white.svg" alt="" />
+          <img src="/images/Arrow_white.svg" alt="" />
         </button>
 
         <!--- Hamburger meny -->
@@ -63,9 +63,9 @@
       <!------- Mobile Navigation menu ------->
       <div id="mobile-menu" class="navbar-mobile hidden">
         <div class="navbar-logo">
-          <a href="index.html">
+          <a href="/index.html">
             <img
-              src="./images/Full_Logo_light.svg"
+              src="/images/Full_Logo_light.svg"
               width="232"
               alt="Company Logo"
             />
@@ -73,7 +73,7 @@
         </div>
 
         <ul>
-          <li><a class="h2-bright" href="index.html">Home</a></li>
+          <li><a class="h2-bright" href="/index.html">Home</a></li>
           <li><a class="h2-bright" href="about.html">About</a></li>
           <li><a class="h2-bright" href="work.html">Work</a></li>
         </ul>
@@ -84,52 +84,65 @@
           class="contact-btn light"
           onclick="window.location.href='contact.html'"
         >
-          Contact <img src="./images/Arrow_brown.svg" alt="" />
+          Contact
+          <img src="/images/Arrow_brown.svg" alt="" />
         </button>
       </div>
     </header>
 
+    <!---------- About section ------------>
     <main>
-      <!--- Work --->
-      <section class="work">
-        <h1>Work experience</h1>
-        <!--- Workexpeience  --->
-        <div class="work-experience-container">
-          <!-- WorkExperience data imports from JSON file -->
-        </div>
-      </section>
+      <section class="about">
+        <h1>About me</h1>
+        <div class="grid-container">
+          <article class="about-text first">
+            <h3>Goals</h3>
+            <p>
+              I first got into coding when I worked closely with developers at
+              my last job. I was amazed by what they could do and how their
+              custom-built solutions made my work so much easier. It seemed
+              really cool, and I wanted to be able to do that myself. So, I
+              decided to take a programming course to see if it was something
+              I’d enjoy. Turns out, I loved it! Even though I’m still pretty new
+              to coding, I’m excited to keep learning and growing. My main
+              interest is in frontend development, but I’m also really intrigued
+              by backend and embedded systems. I know I’ve got a long way to go,
+              but I’m excited to learn and my goal is to become a highly skilled
+              programmer.
+            </p>
+          </article>
 
-      <!------- skill section ------->
-      <section class="skill-section">
-        <h2>Skills</h2>
-        <div class="skill-wrapper">
-          <i class="fa-brands fa-html5 fa-xl" style="color: #de4c0d"></i>
-          <i class="fa-brands fa-css fa-xl" style="color: #2494eb"></i>
-          <i class="fa-brands fa-js fa-xl" style="color: #ffd43b"></i>
-          <i
-            id="react-icon"
-            class="fa-brands fa-react fa-xl"
-            style="color: #74c0fc"
-          ></i>
-          <i class="fa-brands fa-node fa-xl" style="color: #076e18"></i>
-        </div>
-      </section>
+          <article class="about-text second">
+            <h3>What made me switch career?</h3>
+            <p>
+              My love for snowboarding and being out in nature—especially in the
+              mountains—finally pushed me, after years of hesitation, to leave
+              the big city of Stockholm. I took the leap, enrolled in a remote
+              learning program, and in the begining of 2025 I moved to the
+              mountains in Åre. After being tied to a physical workplace for so
+              many years, I’ve developed a dream of working remotely. My hope is
+              that after completing my education as a frontend developer, I’ll
+              be able to make that dream a reality.
+            </p>
+          </article>
 
-      <!--- Education  --->
-      <section class="education-section">
-        <h2>Education</h2>
-        <div class="education-container">
-          <!-- Education data imports from JSON file -->
+          <div class="placeholder-img">
+            <!-- Background image-->
+          </div>
         </div>
       </section>
     </main>
-
     <!---------- Footer ------------>
     <footer>
       <div class="footer-wrapper">
         <!--- Logo --->
         <div class="logo-wrapper">
-          <img src="./images/Small_Logo_big.svg" alt="logo" />
+          <img
+            src="/images/Small_Logo_big.svg"
+            width="100"
+            height="100"
+            alt="logo"
+          />
         </div>
         <!--- contact --->
         <div class="contact-wrapper">
@@ -178,6 +191,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>

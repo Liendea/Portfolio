@@ -65,7 +65,7 @@ window.addEventListener("resize", () => {
 // och inspiration från youtube videos där jag sökt på "fetch data from API" ----- //
 
 //Fetch work- and educationdata from JSON file and create HTML elements with the retrived data
-fetch("data.json") // fetch JSON filen
+fetch("/data.json") // fetch JSON filen
   .then(function (response) {
     return response.json(); // Convert JSON file
   })
