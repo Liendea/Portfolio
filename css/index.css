@@ -243,7 +243,8 @@ to white on the index page  */
 #project-6, /* Login page 2 */
 #project-7,  /* Login page 3 */
 #project-8,  /* Portfolio */
-#project-9 {
+#project-9,
+#project-10 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -260,6 +261,9 @@ to white on the index page  */
 #project-2 {
   background-image: url(../images/Project_converter.png);
 }
+#project-3 {
+  background-image: url();
+}
 #project-4 {
   background-image: url(../images/Project_login_1.png);
 }
@@ -275,9 +279,11 @@ to white on the index page  */
 #project-8 {
   background-image: url(../images/project_portfolio.png);
 }
-
 #project-9 {
   background-image: url(../images/Botanique\ header.png);
+}
+#project-10 {
+  background-image: url(../images/syntaxsquad.png);
 }
 
 /* Project card text content */
